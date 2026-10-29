@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/rogueserenity/mykeebs.com/compare/v1.0.0...v1.1.0) (2026-10-29)
+
+
+### Features
+
+* landing page ([#17](https://github.com/rogueserenity/mykeebs.com/issues/17)) ([37cf341](https://github.com/rogueserenity/mykeebs.com/commit/37cf341e53c15e29ceba5306623daff2b6f65874))
+
 ## 1.0.0 (2026-10-29)
 
 
