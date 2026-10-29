@@ -37,5 +37,6 @@
 	<a href={resolve('/about/ai')}>How AI Is Used</a>
 	<a href={resolve('/privacy')}>Privacy Policy</a>
 	<a href={resolve('/terms')}>Terms of Service</a>
+	<a href={resolve('/contact')}>Contact</a>
 	<a href={APP_URL} rel="external">mykeebs app</a>
 </footer>

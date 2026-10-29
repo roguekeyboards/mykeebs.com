@@ -74,4 +74,12 @@ describe('root layout', () => {
 			.element(page.getByRole('contentinfo').getByRole('link', { name: 'How AI Is Used' }))
 			.toHaveAttribute('href', '/about/ai');
 	});
+
+	it('links the contact page from the footer', async () => {
+		await renderLayout();
+
+		await expect
+			.element(page.getByRole('contentinfo').getByRole('link', { name: 'Contact' }))
+			.toHaveAttribute('href', '/contact');
+	});
 });
