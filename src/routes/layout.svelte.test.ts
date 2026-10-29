@@ -46,4 +46,16 @@ describe('root layout', () => {
 			.element(page.getByRole('contentinfo').getByRole('link', { name: 'mykeebs app' }))
 			.toHaveAttribute('href', 'https://mykeebs.info');
 	});
+
+	it('links the legal pages from the footer', async () => {
+		await renderLayout();
+		const footer = page.getByRole('contentinfo');
+
+		await expect
+			.element(footer.getByRole('link', { name: 'Privacy Policy' }))
+			.toHaveAttribute('href', '/privacy');
+		await expect
+			.element(footer.getByRole('link', { name: 'Terms of Service' }))
+			.toHaveAttribute('href', '/terms');
+	});
 });
