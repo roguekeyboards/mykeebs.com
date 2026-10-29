@@ -88,7 +88,7 @@
 
 	<section class="band" aria-labelledby="track-title">
 		<h2 id="track-title">What you can track</h2>
-		<ul class="parts">
+		<ul class="parts" role="list">
 			{#each parts as part (part.name)}
 				<li>
 					<h3>{part.name}</h3>
@@ -110,7 +110,7 @@
 		</div>
 		<div>
 			<h3 class="prompts-title">Things to ask</h3>
-			<ul class="prompts">
+			<ul class="prompts" role="list">
 				{#each prompts as prompt (prompt)}
 					<li>{prompt}</li>
 				{/each}
@@ -120,7 +120,7 @@
 
 	<section class="band" aria-labelledby="status-title">
 		<h2 id="status-title">From planned to delivered</h2>
-		<ol class="keys">
+		<ol class="keys" role="list" aria-labelledby="status-title">
 			{#each statuses as status (status.label)}
 				<li class="key">
 					<status.icon class="h-4 w-4" aria-hidden="true" />
@@ -139,10 +139,10 @@
 			<h2 id="visibility-title">You decide who sees what</h2>
 			<p>
 				Every keyboard, switch, keycap set and build has its own setting. What you paid stays hidden
-				from others unless you choose to show it.
+				from others unless you choose to show it in your profile.
 			</p>
 		</div>
-		<ul class="audiences">
+		<ul class="audiences" role="list">
 			{#each audiences as audience (audience.label)}
 				<li style:--tone={audience.tone}>
 					<audience.icon class="h-4 w-4" aria-hidden="true" />

@@ -1,6 +1,7 @@
 import { page } from 'vitest/browser';
 import { describe, expect, it } from 'vitest';
 import { render } from 'vitest-browser-svelte';
+import { APP_URL, DISCOVER_URL, MCP_URL } from '#lib/links.js';
 import HomePage from './+page.svelte';
 
 describe('landing page', () => {
@@ -17,7 +18,7 @@ describe('landing page', () => {
 		await render(HomePage);
 		const signIn = page.getByRole('link', { name: 'Sign in or create an account' });
 
-		await expect.element(signIn.first()).toHaveAttribute('href', 'https://mykeebs.info');
+		await expect.element(signIn.first()).toHaveAttribute('href', APP_URL);
 		expect(signIn.all()).toHaveLength(2);
 	});
 
@@ -36,7 +37,7 @@ describe('landing page', () => {
 		await render(HomePage);
 
 		await expect.element(page.getByRole('heading', { name: 'Or just ask' })).toBeVisible();
-		expect(page.getByText('https://api.mykeebs.info/mcp').all()).toHaveLength(0);
+		expect(page.getByText(MCP_URL).all()).toHaveLength(0);
 	});
 
 	it('names everything you can track', async () => {
@@ -49,7 +50,9 @@ describe('landing page', () => {
 
 	it('shows the order statuses in order', async () => {
 		await render(HomePage);
-		const keys = page.getByRole('list').filter({ hasText: 'Planned' }).getByRole('listitem');
+		const keys = page
+			.getByRole('list', { name: 'From planned to delivered' })
+			.getByRole('listitem');
 
 		await expect.element(keys.first()).toBeVisible();
 		expect(keys.all().map((key) => key.element().textContent?.trim())).toEqual([
@@ -65,7 +68,7 @@ describe('landing page', () => {
 
 		await expect
 			.element(page.getByRole('link', { name: 'Discover builders' }))
-			.toHaveAttribute('href', 'https://mykeebs.info/discover');
+			.toHaveAttribute('href', DISCOVER_URL);
 		await expect
 			.element(page.getByRole('link', { name: 'How AI is used' }))
 			.toHaveAttribute('href', '/about/ai');
