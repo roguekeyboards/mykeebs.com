@@ -32,13 +32,11 @@ describe('landing page', () => {
 			.toHaveAttribute('href', '/help/mcp');
 	});
 
-	it("gives prod's MCP server address to copy", async () => {
+	it('leaves the setup steps to the guide', async () => {
 		await render(HomePage);
 
-		await expect
-			.element(page.getByText('https://api.mykeebs.info/mcp', { exact: true }))
-			.toBeVisible();
-		await expect.element(page.getByRole('button', { name: 'Copy' })).toBeVisible();
+		await expect.element(page.getByRole('heading', { name: 'Or just ask' })).toBeVisible();
+		expect(page.getByText('https://api.mykeebs.info/mcp').all()).toHaveLength(0);
 	});
 
 	it('names everything you can track', async () => {

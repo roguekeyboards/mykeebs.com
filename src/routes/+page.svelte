@@ -1,8 +1,7 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
 	import { ClipboardList, Globe, Lock, Package, ShoppingBag, Truck, User } from '@lucide/svelte';
-	import CodeBlock from '#lib/components/CodeBlock.svelte';
-	import { APP_URL, DISCOVER_URL, MCP_URL } from '#lib/links.js';
+	import { APP_URL, DISCOVER_URL } from '#lib/links.js';
 
 	const parts = [
 		{ name: 'Keyboards', detail: 'With their plates and PCBs.' },
@@ -107,8 +106,6 @@
 				own words. It can do almost anything the app can, photos included. It acts as you, so it
 				only sees and changes what you could.
 			</p>
-			<p>Add this server address to your assistant:</p>
-			<CodeBlock code={MCP_URL} />
 			<p><a href={resolve('/help/mcp')}>Set up your assistant</a></p>
 		</div>
 		<div>
