@@ -54,7 +54,9 @@ The dev deployments of kbdb and mykeebs-web link to prod mykeebs.com, not beta.
 **These pages used to live in kbdb and mykeebs-web.** The privacy policy, terms, MCP guide and AI
 statement were Go templates in kbdb, and the contact page was in mykeebs-web. They cover the app,
 the REST API and MCP alike, so when kbdb's processors, retention or MCP tools change, the pages
-here change with them.
+here change with them. The privacy policy names the processors and retention periods in kbdb's
+`template.yaml`; it and the terms carry a visible "Last updated" date, which changes with their
+wording. Long-form pages like these use the `.doc` styles in `layout.css`.
 
 **Styling**: Tailwind v4 (via `@tailwindcss/vite`, no `tailwind.config.js`), with global styles in
 `src/routes/layout.css`. Colour and font tokens (`--bg`, `--accent`, `--font-body`, …), the logo
