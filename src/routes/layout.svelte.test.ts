@@ -58,4 +58,12 @@ describe('root layout', () => {
 			.element(footer.getByRole('link', { name: 'Terms of Service' }))
 			.toHaveAttribute('href', '/terms');
 	});
+
+	it('links the MCP guide from the footer', async () => {
+		await renderLayout();
+
+		await expect
+			.element(page.getByRole('contentinfo').getByRole('link', { name: 'Use with AI Assistants' }))
+			.toHaveAttribute('href', '/help/mcp');
+	});
 });
