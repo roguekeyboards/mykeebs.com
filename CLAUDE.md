@@ -56,7 +56,9 @@ statement were Go templates in kbdb, and the contact page was in mykeebs-web. Th
 the REST API and MCP alike, so when kbdb's processors, retention or MCP tools change, the pages
 here change with them. The privacy policy names the processors and retention periods in kbdb's
 `template.yaml`; it and the terms carry a visible "Last updated" date, which changes with their
-wording. Long-form pages like these use the `.doc` styles in `layout.css`.
+wording. The MCP guide (`/help/mcp`) describes what kbdb's MCP tools can do, and always gives
+prod's server address (`MCP_URL`). Long-form pages like these use the `.doc` styles in
+`layout.css`; code with a copy button goes through `src/lib/components/CodeBlock.svelte`.
 
 **Styling**: Tailwind v4 (via `@tailwindcss/vite`, no `tailwind.config.js`), with global styles in
 `src/routes/layout.css`. Colour and font tokens (`--bg`, `--accent`, `--font-body`, …), the logo
