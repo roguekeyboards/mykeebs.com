@@ -34,6 +34,7 @@
 <footer class="site-footer">
 	<a href={resolve('/')}>Home</a>
 	<a href={resolve('/help/mcp')}>Use with AI Assistants</a>
+	<a href={resolve('/about/ai')}>How AI Is Used</a>
 	<a href={resolve('/privacy')}>Privacy Policy</a>
 	<a href={resolve('/terms')}>Terms of Service</a>
 	<a href={APP_URL} rel="external">mykeebs app</a>
