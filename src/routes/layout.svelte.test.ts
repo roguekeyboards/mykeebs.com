@@ -66,4 +66,12 @@ describe('root layout', () => {
 			.element(page.getByRole('contentinfo').getByRole('link', { name: 'Use with AI Assistants' }))
 			.toHaveAttribute('href', '/help/mcp');
 	});
+
+	it('links the AI statement from the footer', async () => {
+		await renderLayout();
+
+		await expect
+			.element(page.getByRole('contentinfo').getByRole('link', { name: 'How AI Is Used' }))
+			.toHaveAttribute('href', '/about/ai');
+	});
 });
