@@ -1,0 +1,143 @@
+@import '@fontsource/jetbrains-mono/400.css';
+@import '@fontsource/jetbrains-mono/500.css';
+@import '@fontsource/jetbrains-mono/600.css';
+@import '@fontsource/jetbrains-mono/700.css';
+@import '@fontsource/inter/400.css';
+@import '@fontsource/inter/500.css';
+@import '@fontsource/inter/600.css';
+@import '@rogueserenity/mykeebs-brand/tokens.css';
+@import 'tailwindcss';
+
+* {
+	border-color: var(--border);
+}
+
+html,
+body {
+	background: var(--bg);
+	color: var(--text);
+	font-family: var(--font-body);
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100dvh;
+}
+
+main {
+	flex: 1;
+}
+
+::selection {
+	background: var(--accent);
+	color: var(--accent-ink);
+}
+
+/* Site chrome */
+
+.site-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+	padding: 0.875rem 1.5rem;
+	background: var(--bg-raised);
+	border-bottom: 1px solid var(--border);
+}
+
+.site-brand {
+	display: flex;
+	align-items: center;
+	flex-shrink: 0;
+}
+
+.site-brand img {
+	height: 1.75rem;
+	width: auto;
+}
+
+.site-footer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 0.5rem 1.5rem;
+	padding: 1.5rem 1rem;
+	border-top: 1px solid var(--border);
+	font-size: 0.8125rem;
+}
+
+.site-footer a {
+	color: var(--text-muted);
+	text-decoration: underline;
+	text-underline-offset: 2px;
+}
+
+.site-footer a:hover {
+	color: var(--text);
+}
+
+.btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+	font-family: var(--font-body);
+	font-size: 0.875rem;
+	font-weight: 600;
+	padding: 0.5rem 1rem;
+	border-radius: 0.375rem;
+	border: 1px solid var(--border-strong);
+	background: var(--surface);
+	color: var(--text);
+	transition:
+		background-color 120ms ease,
+		transform 80ms ease;
+}
+
+.btn:hover {
+	background: var(--surface-hover);
+}
+
+.btn:active {
+	transform: translateY(1px);
+}
+
+.btn-accent {
+	background: var(--accent);
+	color: var(--accent-ink);
+	border-color: var(--accent-strong);
+}
+
+.btn-accent:hover {
+	background: var(--accent-strong);
+}
+
+/* Focus visibility */
+
+a:focus-visible,
+button:focus-visible {
+	outline: 2px solid var(--accent);
+	outline-offset: 2px;
+}
+
+.skip-link {
+	position: absolute;
+	top: 0.5rem;
+	left: 0.5rem;
+	z-index: 100;
+	padding: 0.5rem 0.9rem;
+	border-radius: 0.375rem;
+	background: var(--accent);
+	color: var(--accent-ink);
+	font-weight: 600;
+	transform: translateY(-200%);
+}
+
+.skip-link:focus {
+	transform: none;
+}
+
+main:focus {
+	outline: none;
+}
