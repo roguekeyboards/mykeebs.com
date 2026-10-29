@@ -1,0 +1,26 @@
+name: Set up mykeebs.com
+description: Installs Node via mise and the npm dependencies, including the mykeebs brand package from GitHub Packages.
+
+inputs:
+  packages-token:
+    description: Token with read access to the @rogueserenity GitHub Packages registry.
+    required: true
+
+runs:
+  using: composite
+  steps:
+    - name: Set up mise
+      uses: jdx/mise-action@6be3c7ed4c21d4f76b208d351d95aac273ebb76d # v5.2.4
+
+    - name: Cache npm downloads
+      uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+      with:
+        path: ~/.npm
+        key: npm-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+        restore-keys: npm-${{ runner.os }}-
+
+    - name: Install dependencies
+      shell: bash
+      run: npm ci
+      env:
+        GITHUB_PACKAGES_TOKEN: ${{ inputs.packages-token }}
