@@ -53,6 +53,8 @@ Name new test files to match whichever project they belong in. Run a single file
 - The CSP is in `vite.config.ts` and emitted by SvelteKit as a `<meta>` tag with a hash of its
   inline script. Headers a `<meta>` can't set (`frame-ancestors`, HSTS, …) are in `static/_headers`,
   which Workers static assets apply to every response.
+- Fonts are committed under `static/fonts/v1/` and must not change, since kbdb loads them by URL.
+  Changed or new fonts go under a new version directory; see `CLAUDE.md`.
 - Node is pinned in `mise.toml`. `.node-version` mirrors it for Cloudflare's build, and Renovate
   updates both, plus `@types/node`, in one grouped PR.
 

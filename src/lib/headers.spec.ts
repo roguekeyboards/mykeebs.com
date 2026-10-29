@@ -32,6 +32,13 @@ describe('_headers', () => {
 		expect(everywhere.get('strict-transport-security')).toContain('max-age=31536000');
 	});
 
+	it('lets other origins load the fonts, and caches them for good', () => {
+		const fonts = rules.get('/fonts/*')!;
+
+		expect(fonts.get('access-control-allow-origin')).toBe('*');
+		expect(fonts.get('cache-control')).toBe('public, max-age=31536000, immutable');
+	});
+
 	it('keeps beta out of search results', () => {
 		expect(rules.get('https://beta.mykeebs.com/*')?.get('x-robots-tag')).toBe('noindex');
 	});
