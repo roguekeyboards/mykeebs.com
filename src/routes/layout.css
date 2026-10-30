@@ -1,4 +1,4 @@
-@import '@rogueserenity/mykeebs-brand/tokens.css';
+@import '@roguekeyboards/mykeebs-brand/tokens.css';
 @import 'tailwindcss';
 
 /* The same files kbdb's sign-in page loads from here (static/fonts/v1). */

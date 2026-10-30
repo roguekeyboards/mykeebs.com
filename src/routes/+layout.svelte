@@ -2,11 +2,11 @@
 	import { resolve } from '$app/paths';
 	import { ExternalLink } from '@lucide/svelte';
 	import './layout.css';
-	import favicon from '@rogueserenity/mykeebs-brand/favicon.svg';
-	import faviconIco from '@rogueserenity/mykeebs-brand/favicon.ico';
-	import appleTouchIcon from '@rogueserenity/mykeebs-brand/apple-touch-icon.png';
-	import logo from '@rogueserenity/mykeebs-brand/logo-horizontal-on-dark.svg';
-	import mark from '@rogueserenity/mykeebs-brand/mark-on-dark.svg';
+	import favicon from '@roguekeyboards/mykeebs-brand/favicon.svg';
+	import faviconIco from '@roguekeyboards/mykeebs-brand/favicon.ico';
+	import appleTouchIcon from '@roguekeyboards/mykeebs-brand/apple-touch-icon.png';
+	import logo from '@roguekeyboards/mykeebs-brand/logo-horizontal-on-dark.svg';
+	import mark from '@roguekeyboards/mykeebs-brand/mark-on-dark.svg';
 	import { APP_URL } from '#lib/links.js';
 
 	let { children } = $props();

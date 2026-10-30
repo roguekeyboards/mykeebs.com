@@ -26,7 +26,7 @@ describe('AI statement', () => {
 		for (const repo of ['kbdb', 'mykeebs-web', 'mykeebs.com']) {
 			await expect
 				.element(page.getByRole('link', { name: repo, exact: true }))
-				.toHaveAttribute('href', `https://github.com/rogueserenity/${repo}`);
+				.toHaveAttribute('href', `https://github.com/roguekeyboards/${repo}`);
 		}
 	});
 
