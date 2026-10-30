@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.2](https://github.com/roguekeyboards/mykeebs.com/compare/v1.1.1...v1.1.2) (2026-10-30)
+
+
+### Bug Fixes
+
+* load the fonts from the brand package and remove /fonts/v1 ([#26](https://github.com/roguekeyboards/mykeebs.com/issues/26)) ([c06a2d9](https://github.com/roguekeyboards/mykeebs.com/commit/c06a2d9564a398c9123ba16d5da6bb5ee05926de))
+
 ## [1.1.1](https://github.com/roguekeyboards/mykeebs.com/compare/v1.1.0...v1.1.1) (2026-10-30)
 
 
