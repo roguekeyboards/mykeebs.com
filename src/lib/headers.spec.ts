@@ -32,11 +32,8 @@ describe('_headers', () => {
 		expect(everywhere.get('strict-transport-security')).toContain('max-age=31536000');
 	});
 
-	it('lets other origins load the fonts, and caches them for good', () => {
-		const fonts = rules.get('/fonts/*')!;
-
-		expect(fonts.get('access-control-allow-origin')).toBe('*');
-		expect(fonts.get('cache-control')).toBe('public, max-age=31536000, immutable');
+	it('has no special rule for fonts, now nothing outside the site loads them', () => {
+		expect(rules.has('/fonts/*')).toBe(false);
 	});
 
 	it('keeps beta out of search results', () => {

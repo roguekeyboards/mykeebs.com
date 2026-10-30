@@ -62,19 +62,13 @@ prod's server address (`MCP_URL`). Long-form pages like these use the `.doc` sty
 
 **Styling**: Tailwind v4 (via `@tailwindcss/vite`, no `tailwind.config.js`), with global styles in
 `src/routes/layout.css`. Colour and font tokens (`--bg`, `--accent`, `--font-body`, …), the logo
-and the favicons come from `@roguekeyboards/mykeebs-brand`; change them in kbdb's `brand/`, not
-here. Fonts are never loaded from Google Fonts, since the privacy policy doesn't list Google as a
-processor.
+and the favicons come from `@roguekeyboards/mykeebs-brand`; change them in
+[mykeebs-brand](https://github.com/roguekeyboards/mykeebs-brand), not here. Fonts are never loaded
+from Google Fonts, since the privacy policy doesn't list Google as a processor.
 
-**Fonts**: JetBrains Mono (400–700) and Inter (400–600), latin subset, are committed woff2 files in
-`static/fonts/v1/`, served at `/fonts/v1/<family>-<subset>-<weight>.woff2` with their OFL licences.
-kbdb's sign-in page (`/authorize`) loads them cross-origin from those exact URLs, which is why they
-aren't content-hashed, and `_headers` gives `/fonts/*` CORS and a year-long immutable
-`Cache-Control`. The site's own `@font-face` rules in `layout.css` use the same files. **A file
-under `v1` never changes**: `src/lib/fonts.spec.ts` pins each one's SHA-256. New or updated fonts go
-in a new `/fonts/v2/` (taken from the `@fontsource/<family>` npm package's `files/`, renamed to this
-scheme), the site moves to it, and kbdb's consent page is updated to match. Keep `v1` until kbdb no
-longer loads it.
+**Fonts**: JetBrains Mono (400–700) and Inter (400–600), latin subset, come from the brand
+package's `fonts.css`, imported in `layout.css`, and Vite bundles and content-hashes them. Nothing
+outside the site loads them any more.
 
 **Security headers**: the CSP is in `vite.config.ts` (SvelteKit's `csp` option, `mode: 'hash'`),
 emitted as a `<meta>` tag. `frame-ancestors`, HSTS, `nosniff` and the rest are in `static/_headers`.

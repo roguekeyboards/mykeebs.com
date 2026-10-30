@@ -1,62 +1,6 @@
+@import '@roguekeyboards/mykeebs-brand/fonts.css';
 @import '@roguekeyboards/mykeebs-brand/tokens.css';
 @import 'tailwindcss';
-
-/* The same files kbdb's sign-in page loads from here (static/fonts/v1). */
-@font-face {
-	font-family: 'JetBrains Mono';
-	font-style: normal;
-	font-display: swap;
-	font-weight: 400;
-	src: url('/fonts/v1/jetbrains-mono-latin-400.woff2') format('woff2');
-}
-
-@font-face {
-	font-family: 'JetBrains Mono';
-	font-style: normal;
-	font-display: swap;
-	font-weight: 500;
-	src: url('/fonts/v1/jetbrains-mono-latin-500.woff2') format('woff2');
-}
-
-@font-face {
-	font-family: 'JetBrains Mono';
-	font-style: normal;
-	font-display: swap;
-	font-weight: 600;
-	src: url('/fonts/v1/jetbrains-mono-latin-600.woff2') format('woff2');
-}
-
-@font-face {
-	font-family: 'JetBrains Mono';
-	font-style: normal;
-	font-display: swap;
-	font-weight: 700;
-	src: url('/fonts/v1/jetbrains-mono-latin-700.woff2') format('woff2');
-}
-
-@font-face {
-	font-family: 'Inter';
-	font-style: normal;
-	font-display: swap;
-	font-weight: 400;
-	src: url('/fonts/v1/inter-latin-400.woff2') format('woff2');
-}
-
-@font-face {
-	font-family: 'Inter';
-	font-style: normal;
-	font-display: swap;
-	font-weight: 500;
-	src: url('/fonts/v1/inter-latin-500.woff2') format('woff2');
-}
-
-@font-face {
-	font-family: 'Inter';
-	font-style: normal;
-	font-display: swap;
-	font-weight: 600;
-	src: url('/fonts/v1/inter-latin-600.woff2') format('woff2');
-}
 
 * {
 	border-color: var(--border);
