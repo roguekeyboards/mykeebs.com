@@ -43,7 +43,7 @@
 	},
 	"dependencies": {
 		"@lucide/svelte": "^1.52.0",
-		"@rogueserenity/mykeebs-brand": "^1.64.2"
+		"@roguekeyboards/mykeebs-brand": "^1.70.3"
 	},
 	"allowScripts": {
 		"esbuild": true,

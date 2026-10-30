@@ -58,7 +58,7 @@ Name new test files to match whichever project they belong in. Run a single file
 - Node is pinned in `mise.toml`. `.node-version` mirrors it for Cloudflare's build, and Renovate
   updates both, plus `@types/node`, in one grouped PR.
 
-## Installing `@rogueserenity/mykeebs-brand`
+## Installing `@roguekeyboards/mykeebs-brand`
 
 The logo, favicons and colour and font tokens are generated in kbdb's `brand/` and published to
 GitHub Packages on every kbdb release. Change them there, not here.

@@ -72,9 +72,9 @@
 		tests that run the whole system end to end.
 	</p>
 	<p>
-		All of the code is public: <a href="https://github.com/rogueserenity/kbdb">kbdb</a> (the API),
-		<a href="https://github.com/rogueserenity/mykeebs-web">mykeebs-web</a> (the app) and
-		<a href="https://github.com/rogueserenity/mykeebs.com">mykeebs.com</a> (this site).
+		All of the code is public: <a href="https://github.com/roguekeyboards/kbdb">kbdb</a> (the API),
+		<a href="https://github.com/roguekeyboards/mykeebs-web">mykeebs-web</a> (the app) and
+		<a href="https://github.com/roguekeyboards/mykeebs.com">mykeebs.com</a> (this site).
 	</p>
 
 	<h2>AI in mykeebs itself</h2>

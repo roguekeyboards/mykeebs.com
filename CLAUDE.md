@@ -18,7 +18,7 @@ npm run test      # vitest run (client and server projects)
 ```
 
 Run `eval "$(mise env)"` before `npm install` if `GITHUB_PACKAGES_TOKEN` isn't already in your
-shell; `@rogueserenity/mykeebs-brand` comes from GitHub Packages.
+shell; `@roguekeyboards/mykeebs-brand` comes from GitHub Packages.
 
 ## Workflow
 
@@ -62,7 +62,7 @@ prod's server address (`MCP_URL`). Long-form pages like these use the `.doc` sty
 
 **Styling**: Tailwind v4 (via `@tailwindcss/vite`, no `tailwind.config.js`), with global styles in
 `src/routes/layout.css`. Colour and font tokens (`--bg`, `--accent`, `--font-body`, …), the logo
-and the favicons come from `@rogueserenity/mykeebs-brand`; change them in kbdb's `brand/`, not
+and the favicons come from `@roguekeyboards/mykeebs-brand`; change them in kbdb's `brand/`, not
 here. Fonts are never loaded from Google Fonts, since the privacy policy doesn't list Google as a
 processor.
 
