@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/roguekeyboards/mykeebs.com/compare/v1.1.0...v1.1.1) (2026-10-30)
+
+
+### Bug Fixes
+
+* use the roguekeyboards packages and repo links ([#24](https://github.com/roguekeyboards/mykeebs.com/issues/24)) ([1c99d81](https://github.com/roguekeyboards/mykeebs.com/commit/1c99d817ab399bff5bb613ed738e4bc5282d5d9a))
+
 ## [1.1.0](https://github.com/rogueserenity/mykeebs.com/compare/v1.0.0...v1.1.0) (2026-10-29)
 
 
