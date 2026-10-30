@@ -7,12 +7,6 @@
   Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()
   Strict-Transport-Security: max-age=31536000; includeSubDomains
 
-# Fonts kbdb's sign-in page loads cross-origin, at URLs it hard-codes. Browsers refuse cross-origin
-# fonts without CORS. Files under a version never change; new files go under a new version.
-/fonts/*
-  Access-Control-Allow-Origin: *
-  Cache-Control: public, max-age=31536000, immutable
-
 # Dev and prod deploy the same build; only beta is kept out of search results.
 https://beta.mykeebs.com/*
   X-Robots-Tag: noindex
