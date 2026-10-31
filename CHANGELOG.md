@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.3](https://github.com/roguekeyboards/mykeebs.com/compare/v1.1.2...v1.1.3) (2026-10-31)
+
+
+### Bug Fixes
+
+* call the API mykeebs-api ([#28](https://github.com/roguekeyboards/mykeebs.com/issues/28)) ([e03c02f](https://github.com/roguekeyboards/mykeebs.com/commit/e03c02fda0aeb3b1430d2fafe68dc5a4d49ceacf))
+
 ## [1.1.2](https://github.com/roguekeyboards/mykeebs.com/compare/v1.1.1...v1.1.2) (2026-10-30)
 
 
