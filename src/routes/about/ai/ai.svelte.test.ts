@@ -23,7 +23,7 @@ describe('AI statement', () => {
 	it('links the code for every part of mykeebs', async () => {
 		await render(AiStatement);
 
-		for (const repo of ['kbdb', 'mykeebs-web', 'mykeebs.com']) {
+		for (const repo of ['mykeebs-api', 'mykeebs-web', 'mykeebs.com']) {
 			await expect
 				.element(page.getByRole('link', { name: repo, exact: true }))
 				.toHaveAttribute('href', `https://github.com/roguekeyboards/${repo}`);

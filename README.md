@@ -2,7 +2,7 @@
 
 The static home of [mykeebs](https://mykeebs.info), the mechanical keyboard collection tracker:
 everything that isn't the app itself. The app is [mykeebs-web](https://github.com/roguekeyboards/mykeebs-web)
-and the API and MCP server behind it is [kbdb](https://github.com/roguekeyboards/kbdb).
+and the API and MCP server behind it is [mykeebs-api](https://github.com/roguekeyboards/mykeebs-api).
 
 Built with SvelteKit, every route prerendered to static HTML, and served by Cloudflare Workers
 static assets.

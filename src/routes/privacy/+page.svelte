@@ -1,6 +1,6 @@
 <!--
   Names the processors mykeebs actually uses (Stytch, AWS, Cloudflare, Discord) and the retention
-  periods set in kbdb's template.yaml, so it has to change when either does.
+  periods set in mykeebs-api's template.yaml, so it has to change when either does.
 -->
 <svelte:head>
 	<title>Privacy Policy · mykeebs</title>
