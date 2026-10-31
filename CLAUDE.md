@@ -49,14 +49,14 @@ not-found page, which `wrangler.jsonc`'s `not_found_handling: "404-page"` serves
 **It always describes prod mykeebs.** Beta and prod serve the same build, and links to the app or
 API come from `src/lib/links.ts`, never env vars. The only difference between environments is the
 `https://beta.mykeebs.com/*` rule in `static/_headers`, which adds `X-Robots-Tag: noindex` there.
-The dev deployments of kbdb and mykeebs-web link to prod mykeebs.com, not beta.
+The dev deployments of mykeebs-api and mykeebs-web link to prod mykeebs.com, not beta.
 
-**These pages used to live in kbdb and mykeebs-web.** The privacy policy, terms, MCP guide and AI
-statement were Go templates in kbdb, and the contact page was in mykeebs-web. They cover the app,
-the REST API and MCP alike, so when kbdb's processors, retention or MCP tools change, the pages
-here change with them. The privacy policy names the processors and retention periods in kbdb's
+**These pages used to live in mykeebs-api and mykeebs-web.** The privacy policy, terms, MCP guide and AI
+statement were Go templates in mykeebs-api, and the contact page was in mykeebs-web. They cover the app,
+the REST API and MCP alike, so when mykeebs-api's processors, retention or MCP tools change, the pages
+here change with them. The privacy policy names the processors and retention periods in mykeebs-api's
 `template.yaml`; it and the terms carry a visible "Last updated" date, which changes with their
-wording. The MCP guide (`/help/mcp`) describes what kbdb's MCP tools can do, and always gives
+wording. The MCP guide (`/help/mcp`) describes what mykeebs-api's MCP tools can do, and always gives
 prod's server address (`MCP_URL`). Long-form pages like these use the `.doc` styles in
 `layout.css`; code with a copy button goes through `src/lib/components/CodeBlock.svelte`.
 

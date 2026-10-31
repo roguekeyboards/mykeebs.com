@@ -1,5 +1,5 @@
 <!--
-  Describes what kbdb's MCP tools can do, so it has to change when they do.
+  Describes what mykeebs-api's MCP tools can do, so it has to change when they do.
 -->
 <script lang="ts">
 	import CodeBlock from '#lib/components/CodeBlock.svelte';
