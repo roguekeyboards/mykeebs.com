@@ -56,3 +56,8 @@ it publishes a GitHub Release, and the `Deploy prod` workflow builds that tag an
 
 See [`CONTRIBUTING.md`](./CONTRIBUTING.md) for the day-to-day workflow (branches and PRs, lint,
 typecheck, tests).
+
+## License
+
+The code is [MIT](LICENSE-MIT). The mykeebs brand, the written content, the fonts and third-party
+packages aren't; see [`LICENSE`](LICENSE).
