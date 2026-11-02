@@ -9,12 +9,12 @@
 
 <article class="doc">
 	<h1>Privacy Policy</h1>
-	<p class="doc-updated">Last updated: November 1, 2026</p>
+	<p class="doc-updated">Last updated: November 2, 2026</p>
 
 	<p>
 		mykeebs is a place to keep track of your mechanical keyboards, switches, keycaps and builds.
 		This policy covers all of mykeebs: this site (mykeebs.com), the mykeebs app (mykeebs.info), the
-		API, and AI assistants connected through MCP. It's run by Rogue Keyboards. Questions or
+		API, and AI assistants connected through MCP. It's run by Rogue Keyboards LLC. Questions or
 		requests: <a href="mailto:support@mykeebs.com">support@mykeebs.com</a>.
 	</p>
 

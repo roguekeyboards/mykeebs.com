@@ -5,12 +5,12 @@
 
 <article class="doc">
 	<h1>Terms of Service</h1>
-	<p class="doc-updated">Last updated: November 1, 2026</p>
+	<p class="doc-updated">Last updated: November 2, 2026</p>
 
 	<p>
 		These terms cover all of mykeebs: this site (mykeebs.com), the mykeebs app (mykeebs.info), the
 		API, and AI assistants connected through MCP. By using mykeebs you agree to them. It's run by
-		Rogue Keyboards. Questions, problems, or reporting someone breaking these rules:
+		Rogue Keyboards LLC. Questions, problems, or reporting someone breaking these rules:
 		<a href="mailto:support@mykeebs.com">support@mykeebs.com</a>.
 	</p>
 
