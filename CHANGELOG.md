@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.4](https://github.com/roguekeyboards/mykeebs.com/compare/v1.1.3...v1.1.4) (2026-11-02)
+
+
+### Bug Fixes
+
+* name Rogue Keyboards LLC on the terms and privacy pages ([#35](https://github.com/roguekeyboards/mykeebs.com/issues/35)) ([b651aef](https://github.com/roguekeyboards/mykeebs.com/commit/b651aefd5dde4b6abcc15909a864d1d3cbacfaa1))
+
 ## [1.1.3](https://github.com/roguekeyboards/mykeebs.com/compare/v1.1.2...v1.1.3) (2026-10-31)
 
 
