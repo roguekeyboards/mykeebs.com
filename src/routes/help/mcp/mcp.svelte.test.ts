@@ -58,6 +58,24 @@ describe('MCP guide', () => {
 			.toBeVisible();
 	});
 
+	it('covers EC parts and EC builds', async () => {
+		await render(McpGuide);
+
+		await expect
+			.element(page.getByText(/domes, sliders, housings, springs\s+and silencing rings/))
+			.toBeVisible();
+		await expect.element(page.getByText(/Make an EC build/)).toBeVisible();
+		await expect
+			.element(page.getByText(/keyboard, switch, EC part, keycap set and build is public/))
+			.toBeVisible();
+		await expect
+			.element(page.getByText(/a switch, EC part, keycap kit and profile have one each/))
+			.toBeVisible();
+		await expect
+			.element(page.getByText(/keyboard, switch, EC part or keycap set, deleting\s+it fails/))
+			.toBeVisible();
+	});
+
 	it('links the app', async () => {
 		await render(McpGuide);
 
