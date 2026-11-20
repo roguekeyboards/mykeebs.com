@@ -32,6 +32,10 @@
 			Add, change and remove keyboards (with their plates and PCBs), switches, keycap sets (with
 			their kits) and builds.
 		</li>
+		<li>
+			Keep track of EC (electro-capacitive, Topre-style) parts: domes, sliders, housings, springs
+			and silencing rings, each bought on its own, and put them together into EC builds.
+		</li>
 		<li>Add and remove photos.</li>
 		<li>Set up and edit your profile: username, bio, links, avatar and price preferences.</li>
 		<li>Look through other people's public collections and the profile directory.</li>
@@ -96,6 +100,10 @@
 	<ul>
 		<li>"Add my Gateron Oil Kings to mykeebs. I bought 90 of them from KBDfans for $40."</li>
 		<li>"Make a build from my Mode Envoy, the Oil Kings and GMK Olivia, and make it public."</li>
+		<li>
+			"I bought 110 45g Deskeys domes for $35. Make an EC build of my HHKB with them and my Topre
+			sliders."
+		</li>
 		<li>"Which of my keyboards haven't been delivered yet?"</li>
 		<li>"How much have I spent on keycaps this year?"</li>
 		<li>"Show me the public builds in jane's collection."</li>
@@ -110,14 +118,14 @@
 
 	<h2>Good to know</h2>
 	<p>
-		<strong>Who can see what.</strong> Each keyboard, switch, keycap set and build is public (anyone),
-		visible to signed-in mykeebs users only, or private (just you). Prices you paid are shown to others
-		only if your profile allows it.
+		<strong>Who can see what.</strong> Each keyboard, switch, EC part, keycap set and build is public
+		(anyone), visible to signed-in mykeebs users only, or private (just you). Prices you paid are shown
+		to others only if your profile allows it.
 	</p>
 	<p>
 		<strong>Photos.</strong> Give your assistant a photo, or a link to one, and it uploads it for you.
 		Every photo is checked automatically, and only you can see it until it passes. A keyboard or build
-		can have up to 10 photos; a switch, keycap kit and profile have one each.
+		can have up to 10 photos; a switch, EC part, keycap kit and profile have one each.
 	</p>
 	<p>
 		Photos must be WebP, at most 2560 pixels on their longest side and at most 1.5 MB. If yours
@@ -143,9 +151,9 @@
 	</ul>
 	<p>
 		<strong>Deleting.</strong> Your assistant can delete things, including your whole account, and deleted
-		items can't be brought back. If a build still uses a keyboard, switch or keycap set, deleting it fails
-		unless you also delete the builds that use it. Most assistants ask before using a tool; read what
-		it's about to do before you allow anything that deletes.
+		items can't be brought back. If a build still uses a keyboard, switch, EC part or keycap set, deleting
+		it fails unless you also delete the builds that use it. Most assistants ask before using a tool; read
+		what it's about to do before you allow anything that deletes.
 	</p>
 	<p>
 		<strong>Mistakes.</strong> AI assistants can misread what you meant. Check what was saved, especially
