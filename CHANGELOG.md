@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/roguekeyboards/mykeebs.com/compare/v1.1.4...v1.2.0) (2026-11-20)
+
+
+### Features
+
+* **mcp:** describe EC parts and EC builds in the MCP guide ([3cb7dec](https://github.com/roguekeyboards/mykeebs.com/commit/3cb7dec2f20ff68d061b44f722822d33030ed62a))
+
 ## [1.1.4](https://github.com/roguekeyboards/mykeebs.com/compare/v1.1.3...v1.1.4) (2026-11-02)
 
 
