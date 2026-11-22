@@ -72,9 +72,9 @@
 		tests that run the whole system end to end.
 	</p>
 	<p>
-		All of the code is public: <a href="https://github.com/roguekeyboards/mykeebs-api"
-			>mykeebs-api</a
-		>
+		All of the code is public: <a href="https://github.com/roguekeyboards/mykeebs-api">
+			mykeebs-api
+		</a>
 		(the API),
 		<a href="https://github.com/roguekeyboards/mykeebs-web">mykeebs-web</a> (the app) and
 		<a href="https://github.com/roguekeyboards/mykeebs.com">mykeebs.com</a> (this site).
