@@ -36,6 +36,10 @@
 			Keep track of EC (electro-capacitive, Topre-style) parts: domes, sliders, housings, springs
 			and silencing rings, each bought on its own, and put them together into EC builds.
 		</li>
+		<li>
+			Record more than one purchase of the same switch or EC part, such as a restock or a second
+			kit.
+		</li>
 		<li>Add and remove photos.</li>
 		<li>Set up and edit your profile: username, bio, links, avatar and price preferences.</li>
 		<li>Look through other people's public collections and the profile directory.</li>
@@ -99,6 +103,7 @@
 	<h2>Things to try</h2>
 	<ul>
 		<li>"Add my Gateron Oil Kings to mykeebs. I bought 90 of them from KBDfans for $40."</li>
+		<li>"I bought another 90 Oil Kings from KBDfans for $36."</li>
 		<li>"Make a build from my Mode Envoy, the Oil Kings and GMK Olivia, and make it public."</li>
 		<li>
 			"I bought 110 45g Deskeys domes for $35. Make an EC build of my HHKB with them and my Topre
@@ -154,6 +159,12 @@
 		items can't be brought back. If a build still uses a keyboard, switch, EC part or keycap set, deleting
 		it fails unless you also delete the builds that use it. Most assistants ask before using a tool; read
 		what it's about to do before you allow anything that deletes.
+	</p>
+	<p>
+		<strong>Updates.</strong> When mykeebs changes what your assistant can do, an assistant that was
+		already connected may keep using the old version and start getting errors. Reconnecting fixes
+		it: in Claude Code, type <code>/mcp</code>, pick <strong>mykeebs</strong> and choose
+		<strong>Reconnect</strong>.
 	</p>
 	<p>
 		<strong>Mistakes.</strong> AI assistants can misread what you meant. Check what was saved, especially
