@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/roguekeyboards/mykeebs.com/compare/v1.2.0...v1.3.0) (2026-11-24)
+
+
+### Features
+
+* **mcp:** describe repeat purchases of switches and EC parts in the MCP guide ([#100](https://github.com/roguekeyboards/mykeebs.com/issues/100)) ([5ca5d3e](https://github.com/roguekeyboards/mykeebs.com/commit/5ca5d3e06e7010312a47c669f73b093e5cf480a6))
+
 ## [1.2.0](https://github.com/roguekeyboards/mykeebs.com/compare/v1.1.4...v1.2.0) (2026-11-20)
 
 
