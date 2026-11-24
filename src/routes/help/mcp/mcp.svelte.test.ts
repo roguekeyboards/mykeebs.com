@@ -91,6 +91,19 @@ describe('MCP guide', () => {
 		await render(McpGuide);
 
 		await expect.element(page.getByText(/Reconnecting fixes\s+it/)).toBeVisible();
+		await expect
+			.element(
+				page.getByText(
+					/In Claude, open Settings, then Connectors, and disconnect\s+and reconnect mykeebs/
+				)
+			)
+			.toBeVisible();
+		await expect
+			.element(page.getByText(/In Claude Code, type \/mcp, pick mykeebs\s+and choose Reconnect/))
+			.toBeVisible();
+		await expect
+			.element(page.getByText(/earlier purchases are still there after you add one/))
+			.toBeVisible();
 	});
 
 	it('links the app', async () => {

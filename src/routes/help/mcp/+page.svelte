@@ -38,7 +38,7 @@
 		</li>
 		<li>
 			Record more than one purchase of the same switch or EC part, such as a restock or a second
-			kit.
+			order.
 		</li>
 		<li>Add and remove photos.</li>
 		<li>Set up and edit your profile: username, bio, links, avatar and price preferences.</li>
@@ -163,12 +163,13 @@
 	<p>
 		<strong>Updates.</strong> When mykeebs changes what your assistant can do, an assistant that was
 		already connected may keep using the old version and start getting errors. Reconnecting fixes
-		it: in Claude Code, type <code>/mcp</code>, pick <strong>mykeebs</strong> and choose
-		<strong>Reconnect</strong>.
+		it. In Claude, open <strong>Settings</strong>, then <strong>Connectors</strong>, and disconnect
+		and reconnect mykeebs. In Claude Code, type <code>/mcp</code>, pick <strong>mykeebs</strong>
+		and choose <strong>Reconnect</strong>. In other assistants, remove the server and add it again.
 	</p>
 	<p>
 		<strong>Mistakes.</strong> AI assistants can misread what you meant. Check what was saved, especially
-		prices and dates.
+		prices and dates, and that earlier purchases are still there after you add one.
 	</p>
 
 	<h2>Disconnecting</h2>
