@@ -76,6 +76,36 @@ describe('MCP guide', () => {
 			.toBeVisible();
 	});
 
+	it('covers repeat purchases of switches and EC parts', async () => {
+		await render(McpGuide);
+
+		await expect
+			.element(page.getByText(/more than one purchase of the same switch or EC part/))
+			.toBeVisible();
+		await expect
+			.element(page.getByText('"I bought another 90 Oil Kings from KBDfans for $36."'))
+			.toBeVisible();
+	});
+
+	it('says how to reconnect after the tools change', async () => {
+		await render(McpGuide);
+
+		await expect.element(page.getByText(/Reconnecting fixes\s+it/)).toBeVisible();
+		await expect
+			.element(
+				page.getByText(
+					/In Claude, open Settings, then Connectors, and disconnect\s+and reconnect mykeebs/
+				)
+			)
+			.toBeVisible();
+		await expect
+			.element(page.getByText(/In Claude Code, type \/mcp, pick mykeebs\s+and choose Reconnect/))
+			.toBeVisible();
+		await expect
+			.element(page.getByText(/earlier purchases are still there after you add one/))
+			.toBeVisible();
+	});
+
 	it('links the app', async () => {
 		await render(McpGuide);
 
